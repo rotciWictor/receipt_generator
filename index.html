@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Receipt Generator</title>
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+    </head>
+    <body>
+        <section id="div">
+            <div class="divzinha">
+                <label for="digitable_line">Linha digitavel</label>
+                <input id="digitable_line" type="number" name="digitable_line">
+                
+                <label for="status">status</label>
+                <input id="status" type="text" name="status">
+                
+                <label for="date">data</label>
+                <input id="date" type="date" name="date">
+                
+                <label for="value">valor</label>
+                <input id="value" type="number" name="value">
+            </div>
+            <div class="divzinha">
+                <label for="third_party_id">Third party Id</label>
+                <input id="third_party_id" type="text" name="third_party_id">
+                
+                <label for="payer_document">CNPJ/CPF Pagador</label>
+                <input id="payer_document" type="text" name="payer_document">
+                
+                <label for="today_date">Data de Hoje</label>
+                <input id="today_date" type="DATE" name="today_date">
+            </div>
+            <div class="divzinha">
+                <label for="payer_name">Nome do Pagador</label>
+                <input id="payer_name" type="text" name="payer_name">
+                
+                <label for="receiver_name">Nome do Recebedor</label>
+                <input id="receiver_name" type="text" name="receiver_name">
+                
+                <label for="receiver_document">Documento Recebedor</label>
+                <input id="receiver_document" type="text" name="receiver_document">
+            </div>
+            
+            <button type="button" id="Generate">Gerar Comprovante</button>
+        </section>
+        <!-- aqui tem o comprovante -->
+        <section id="results">
+            <div>
+                <div id="header">
+                    <p id="date"></p>
+                </div>
+            </div>
+            <div id="info">
+                <p id="date"></p>
+                <p id="val"></p>
+                <p id="tp_id"></p>
+                <p id="payer"></p>
+                <p id="payer_doc"></p>
+                <p id="receiver"></p>
+                <p id="receiver_doc"></p>
+            </div>
+            <div id="receipt">
+                <img src="/image/boleto.png" alt="" srcset="">
+            </div>
+        </section>
+        <button type="button" id="back">Voltar</button>
+        
+        
+        
+        
+        <script defer src="./script.js"></script>
+    </body>
+    </html>

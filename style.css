@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+}
+
+#div{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.divzinha {
+    display: flex;
+    flex-direction: column;
+}
+
+#back{
+    display: none;
+}
+
+#results{
+    /* trocar p none */
+    display: flex;
+    flex-direction: column;
+    /* height: 20vh; */
+    /* width: 20vw; */
+    /* background-image: url(/image/boleto.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* #info{
+    border: 1px solid black;
+    margin: 15px;
+} */
+#receipt{
+    height: 500px;
+    width: 540px;
+    /* width: 500px; */
+    
+}
