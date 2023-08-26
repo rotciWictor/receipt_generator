@@ -13,10 +13,10 @@
                 <input id="digitable_line" type="number" name="digitable_line">
                 
                 <label for="status">status</label>
-                <input id="status" type="text" name="status">
+                <input id="status_id" type="text" name="status">
                 
                 <label for="date">data</label>
-                <input id="date" type="date" name="date">
+                <input id="date" type="text" name="date">
                 
                 <label for="value">valor</label>
                 <input id="value" type="number" name="value">
@@ -29,7 +29,7 @@
                 <input id="payer_document" type="text" name="payer_document">
                 
                 <label for="today_date">Data de Hoje</label>
-                <input id="today_date" type="DATE" name="today_date">
+                <input id="today_date" type="text" name="today_date">
             </div>
             <div class="divzinha">
                 <label for="payer_name">Nome do Pagador</label>
@@ -46,28 +46,21 @@
         </section>
         <!-- aqui tem o comprovante -->
         <section id="results">
-            <div>
-                <div id="header">
-                    <p id="date"></p>
-                </div>
-            </div>
-            <div id="info">
-                <p id="date"></p>
-                <p id="val"></p>
-                <p id="tp_id"></p>
-                <p id="payer"></p>
-                <p id="payer_doc"></p>
-                <p id="receiver"></p>
-                <p id="receiver_doc"></p>
-            </div>
+            <p id="linha"></p>
+            <p id="show_date"></p>
+            <p id="show_status"></p>
+            <p id="show_today_date"></p>
+            <p id="val"></p>
+            <p id="tp_id"></p>
+            <p id="payer"></p>
+            <p id="payer_doc"></p>
+            <p id="receiver"></p>
+            <p id="receiver_doc"></p>
             <div id="receipt">
-                <img src="/image/boleto.png" alt="" srcset="">
+                <img src="./image/boleto.jpeg">
             </div>
         </section>
         <button type="button" id="back">Voltar</button>
-        
-        
-        
         
         <script defer src="./script.js"></script>
     </body>

@@ -22,28 +22,73 @@ body {
 }
 
 #results{
-    /* trocar p none */
-    display: flex;
+    display: none;
     flex-direction: column;
-    /* height: 20vh; */
-    /* width: 20vw; */
-    /* background-image: url(/image/boleto.png);
-    background-repeat: no-repeat;
-    background-size: cover; */
+    height: 541px;
+    width: 461px;
 }
 
-#header{
-    display: flex;
-    justify-content: space-between;
-}
-
-/* #info{
-    border: 1px solid black;
-    margin: 15px;
-} */
 #receipt{
-    height: 500px;
-    width: 540px;
-    /* width: 500px; */
-    
+    position: absolute;
+    z-index: -1;
+}
+
+#receiver_doc{
+    position: absolute;
+    top:447px;
+    left: 343px;
+}
+
+#linha {
+    position: absolute;
+    top: 217px;
+    left: 303px;
+}
+
+#show_status {
+    position: absolute;
+    top:263px;
+    left: 345px;
+}
+
+#show_date {
+    position: absolute;
+    top:287px;
+    left: 416px;
+}
+
+#show_today_date {
+    position: absolute;
+    top:137px;
+    left: 624px;
+}
+
+#val {
+    position: absolute;
+    top: 312px;
+    left: 356px;
+}
+
+#tp_id {
+    position: absolute;
+    top: 334px;
+    left: 384px;
+}
+
+#payer {
+    position: absolute;
+    top: 360px;
+    left: 355px;
+}
+
+#payer_doc {
+    position: absolute;
+    top: 389px;
+    left: 342px;
+}
+
+#receiver {
+    position: absolute;
+    top: 418px;
+    left: 372px;
 }

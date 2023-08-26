@@ -7,24 +7,30 @@ let receiver_name = document.getElementById("receiver_name");
 let third_party_id = document.getElementById("third_party_id");
 let value = document.getElementById("value");
 let date = document.getElementById("date");
-let status = document.getElementById("status");
+let status_id = document.getElementById("status_id");
 
 let div = document.getElementById("div");
 let results = document.getElementById("results");
 
 let back = document.getElementById("back");
 
-let show_date = document.getElementById("date");
+let show_date = document.getElementById("show_date");
 let val = document.getElementById("val");
 let tp_id = document.getElementById("tp_id");
 let payer = document.getElementById("payer");
 let payer_doc = document.getElementById("payer_doc");
 let receiver = document.getElementById("receiver");
 let receiver_doc = document.getElementById("receiver_doc");
+let show_status = document.getElementById("show_status");
+let line = document.getElementById("linha");
+let show_today_date = document.getElementById("show_today_date");
 
 function showValues()
 {
-    show_date.innerHTML = today_date.value;
+    line.innerHTML = digitable_line.value;
+    show_status.innerHTML = status_id.value;
+    show_today_date.innerHTML = today_date.value;
+    show_date.innerHTML = date.value;
     val.innerHTML = value.value;
     tp_id.innerHTML = third_party_id.value;
     payer.innerHTML = payer_name.value;
